@@ -1,0 +1,9 @@
+[submodule "external/ambik_evaluation"]
+	path = external/ambik_evaluation
+	url = https://github.com/sn0rkmaiden/ambik_evaluation
+[submodule "external/sae-reasoning"]
+	path = external/sae-reasoning
+	url = https://github.com/sn0rkmaiden/SAE-Reasoning
+[submodule "external/clarq-llm"]
+	path = external/clarq-llm
+	url = https://github.com/sn0rkmaiden/ClarQ-LLM
