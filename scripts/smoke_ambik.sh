@@ -5,9 +5,16 @@ RUN_NAME="${1:-smoke}"
 OUTDIR="artifacts/ambik/${RUN_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$OUTDIR"
 
-# NOTE: Replace the command below with the smallest AmbiK command you actually use.
-# The point is: "runs fast, produces some output, proves environment works".
-CMD=(python external/ambik_evaluation/runner.py --help)
+CMD=(
+  python external/ambik_evaluation/runner.py
+  --model_name google/gemma-2b-it
+  --num_examples 2
+  --seed 0
+  --mode proxy
+  --out_json "$OUTDIR/results.json"
+)
+
+mkdir -p "$OUTDIR"
 
 ./scripts/_run_record.sh "$OUTDIR" "${CMD[@]}"
 
@@ -15,6 +22,3 @@ CMD=(python external/ambik_evaluation/runner.py --help)
 ("${CMD[@]}" |& tee "$OUTDIR/stdout.log") || true
 
 echo "Wrote: $OUTDIR"
-EOF
-
-chmod +x scripts/smoke_ambik.sh

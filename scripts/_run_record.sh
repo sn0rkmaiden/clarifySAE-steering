@@ -1,12 +1,12 @@
-# !/usr/bin/env bash
+#!/usr/bin/env bash
 set -euo pipefail
 
-# Usage: _run_record <artifact_dir> <command...>
-ARTDIR="$1"; shift
+ARTDIR="$1"
+shift
 mkdir -p "$ARTDIR"
 
-# Record command + git state of submodules
 printf "%s\n" "$*" > "$ARTDIR/command.txt"
+
 
 {
   echo "=== DATE ==="
@@ -24,6 +24,3 @@ printf "%s\n" "$*" > "$ARTDIR/command.txt"
   echo "=== PIP FREEZE (best effort) ==="
   python -m pip freeze 2>/dev/null || true
 } > "$ARTDIR/env.txt"
-EOF
-
-chmod +x scripts/_run_record.sh
