@@ -31,6 +31,7 @@ The provider model (Qwen) supplies information when clarification is requested, 
 
 ## Repository Structure
 
+```
 clarifySAE-steering/
 ├── external/
 │   ├── ambik_evaluation/        # AmbiK repo (submodule)
@@ -64,3 +65,4 @@ clarifySAE-steering/
 │   └── method_overview.png
 │
 └── README.md
+```
