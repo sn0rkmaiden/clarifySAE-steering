@@ -62,8 +62,8 @@ With steering:
 
 Key options:
 
-* --model_name: LLM used for question generation (Gemma is the primary model used in this work)
-* --mode: proxy, dialog, or both
-* --num_examples: subsampling for debugging or development
-* --use_steering: enable SAE-based steering
-* --steering_feature(s), --steering_strength: steering configuration
+* `--model_name`: LLM used for question generation (Gemma is the primary model used in this work)
+* `--mode`: proxy, dialog, or both
+* `--num_examples`: subsampling for debugging or development
+* `--use_steering`: enable SAE-based steering
+* `--steering_features`, `--steering_strength`, `--max_act`: steering configuration
