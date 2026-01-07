@@ -1,0 +1,8 @@
+run_file,model,dataset,sae_id,mode,seed,compute_max_per_turn,steering_used,n_examples,threshold,feature,strength,max_act,resolved_proxy_rate,avg_num_questions,necessity_precision,necessity_recall,resolved_dialog_rate,overall_weighted_score
+ambik_9b_steered_eval_feat344.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,True,100,0.75,,,,0.0,1.06,0.5085,0.6383,,0.3751
+ambik_9b_steered_eval_feat383.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,True,100,0.75,,,,0.0,1.19,0.459,0.5957,,0.3519
+ambik_9b_steered_eval_feat565.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,True,100,0.75,,,,0.0,1.4,0.5072,0.7447,,0.4163
+ambik_9b_steered_eval_feat591.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,True,100,0.75,,,,0.0,1.2,0.4754,0.617,,0.3615
+ambik_9b_steered_eval_feat688.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,True,100,0.75,,,,0.0,1.32,0.5152,0.7234,,0.4077
+ambik_9b_steered_eval_feat771.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,True,100,0.75,,,,0.0,1.04,0.5818,0.6809,,0.3984
+ambik_9b_nonsteered_eval_featNone.json,gemma-2-9b-it,ambik_calib_100.csv,,proxy,0,,False,100,0.75,,,,0.0,1.06,0.459,0.5957,,0.3589
