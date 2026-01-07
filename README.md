@@ -38,6 +38,9 @@ clarifySAE-steering/
 │   ├── clarq-llm/               # ClarQ-LLM repo (submodule)
 │   └── SAE-Reasoning/           # SAE-Reasoning repo (submodule)
 │
+├── data/
+│   └── ... # experiment results
+│
 ├── docs/
 │   ├── 01_ambik.md              
 │   ├── 02_clarq_llm.md          
@@ -56,13 +59,21 @@ clarifySAE-steering/
 │   ├── run_clarq_gemma_seeker_qwen_provider.sh
 │   └── run_clarq_eval.sh
 │
+├── plot_scripts/
+│   ├── clar_outcome_effort_from_metrics.py
+│   ├── make_rq3_tables.py
+│   ├── plot_ambik_main_bars.py
+│   ├── plot_ambik_rq3_alpha_compare.py  
+│   └── Reproducing_figures.md
+│
 ├── artifacts/
 │   ├── ambik/
 │   ├── clarq/
 │   └── sae_reasoning/           
 │
 ├── figures/
-│   └── method_overview.png
+│   └── meth_od.png
+│   └── over_view.png
 │
 └── README.md
 
