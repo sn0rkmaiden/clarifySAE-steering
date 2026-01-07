@@ -17,7 +17,7 @@ This repository includes three external codebases as git submodules:
 
 ## Method Overview
 
-![Method overview](figures/method_diagram.png)
+![Method overview](figures/meth_od.png)
 
 **High-level idea:**  
 We steer a local LLM (Gemma) using interpretable Sparse Autoencoder (SAE) features to control *when and how* the model asks clarification questions. The steered model is evaluated across two complementary benchmarks:
@@ -65,4 +65,5 @@ clarifySAE-steering/
 │   └── method_overview.png
 │
 └── README.md
+
 ```
